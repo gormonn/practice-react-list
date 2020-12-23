@@ -9,15 +9,14 @@ export const Table = styled.div`
 
 export const Row = styled.div`
   display: flex;
+  width: 100%;
+  flex-grow: 1;
 `;
 
 export const Cell = styled.div`
   box-sizing: border-box;
-  flex-grow: 1;
-  width: 100%;
-  padding: 0.8em 1.2em;
   overflow: hidden;
+  flex-grow: 1;
   list-style: none;
-  border: solid 3px white;
-  background: rgba(112, 128, 144, 0.2);
+  border: solid 3px gray;
 `;
