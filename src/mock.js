@@ -1,7 +1,9 @@
-import util from "util";
 import mocker from "mocker-data-generator";
 
 const product = {
+  id: {
+    faker: "random.uuid"
+  },
   name: {
     faker: "commerce.productName",
     length: 15
@@ -26,12 +28,12 @@ const product = {
 };
 
 export async function getFakeData(count = 5) {
-  mocker()
-    .schema("product", product, count)
+  return mocker()
+    .schema("products", product, count)
     .build()
     .then(
       (data) => {
-        return data;
+        return data.products;
         // console.log("aaa", JSON.stringify(data));
         // // This returns an object
         // // {
