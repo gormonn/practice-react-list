@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(21 21 21);
+  color: #abb2bf;
+}
 .App {
   font-family: sans-serif;
   text-align: center;

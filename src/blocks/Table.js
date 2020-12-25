@@ -19,4 +19,5 @@ export const Cell = styled.div`
   flex-grow: 1;
   list-style: none;
   border: solid 3px gray;
+  width: 100px;
 `;
